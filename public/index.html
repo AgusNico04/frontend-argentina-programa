@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Maquetado</title>
+</head>
+<body>
+    <header class="sticky-top" >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/face.jpeg" alt="Face" width="50" height="50" class="d-inline-block rounded-circle">
+                Agus Paterlini
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav mr-auto">
+                    <a class="nav-item nav-link active" href="#about">About me</a>
+                    <a class="nav-item nav-link" href="#knowledge">Knowledge</a>
+                    <a class="nav-item nav-link" href="#projects">Projects</a>
+                    <a class="nav-item nav-link" href="#contact">Contact me</a>
+                </div>
+
+                <button class="btn btn-outline-success my-2 my-sm-0" download="./assets/face.jpeg">Download CV</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="d-flex flex-row justify-content-center" style="margin-top: 50px;">
+            <figure class="w-50 d-flex flex-row flex-wrap justify-content-center">
+                <img class="rounded-circle" src="./assets/face.jpeg" alt="Face" width="200" height="200" style="margin-bottom: 40px;">
+                <h3 class="d-block w-100 text-center">About me</h3>
+                <figcaption class="w-100 bg-dark text-center text-white rounded">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nesciunt, necessitatibus? Consequatur cumque, minus, quos 
+                    suscipit soluta quisquam enim eveniet ab fugit hic quasi voluptatem 
+                    earum nesciunt rem repellendus architecto placeat.<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nesciunt, necessitatibus? Consequatur cumque, minus, quos 
+                    suscipit soluta quisquam enim eveniet ab fugit hic quasi voluptatem 
+                    earum nesciunt rem repellendus architecto placeat.<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nesciunt, necessitatibus? Consequatur cumque, minus, quos 
+                    suscipit soluta quisquam enim eveniet ab fugit hic quasi voluptatem 
+                    earum nesciunt rem repellendus architecto placeat.
+                </figcaption>
+            </figure>
+        </section>
+
+        <section id="knowledge" class="d-flex flex-row justify-content-center flex-wrap" style="margin-top: 50px;">
+            <h3 class="d-block w-100 text-center">Knowledge</h3>
+            <div class="w-50 bg-dark text-center text-white rounded d-flex flex-row justify-content-around p-2" style="height: 450px;">
+                <ul class="list-unstyled d-flex flex-column align-self-center">
+                    <li>
+                        Typescript
+                    </li>
+                    <li>
+                        HTML
+                    </li>
+                    <li>
+                        CSS
+                    </li>
+                    <li>
+                        Angular
+                    </li>
+                    <li>
+                        React
+                    </li>
+                    <li>
+                        NodeJS
+                    </li>
+                </ul>
+
+                <ul class="list-unstyled d-flex flex-column align-self-center">
+                    <li>
+                        C#
+                    </li>
+                    <li>
+                        C++
+                    </li>
+                    <li>
+                        Git
+                    </li>
+                    <li>
+                        Docker
+                    </li>
+                    <li>
+                        NestJS
+                    </li>
+                    <li>
+                        ExpressJS
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="d-flex flex-row justify-content-center flex-wrap" style="margin-top: 50px;">
+            <h3 class="d-block w-100 text-center">Projects</h3>
+            <div class="w-50 bg-dark text-center text-white rounded d-flex flex-row justify-content-around p-2">
+                <ul class="list-unstyled d-flex flex-column w-100">
+                    <li><p>Project 1</p> <button class="btn btn-light w-75">Visit App</button></li>
+                    <li><p>Project 2</p> <button class="btn btn-light w-75">Visit App</button></li>
+                    <li><p>Project 3</p> <button class="btn btn-light w-75">Visit App</button></li>
+                    <li><p>Project 4</p> <button class="btn btn-light w-75">Visit App</button></li>
+                    <li><p>Project 5</p> <button class="btn btn-light w-75">Visit App</button></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="d-flex flex-row justify-content-center flex-wrap" style="margin-top: 50px;">
+            <h3 class="d-block w-100 text-center">Contact me</h3>
+            <form class="w-50 bg-dark text-center text-white rounded d-flex flex-row flex-wrap justify-content-center p-2">
+                <div class="w-75">
+                    <label for="from-name" class="form-label">Name:</label>
+                    <input type="text" id="from-name" class="form-control">
+                </div>
+
+                <div class="w-75" style="margin-top: 10px;">
+                    <label for="from-email" class="form-label text-left">Email:</label>
+                    <input type="email" id="from-email" class="form-control">
+                </div>
+
+                <div class="w-75" style="margin-top: 10px;">
+                    <label for="message" class="form-label text-left">Message:</label>
+                    <textarea type="text" id="message" class="form-control"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-light w-75" style="margin: 20px 0;">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="d-flex flex-row justify-content-center align-content-center flex-wrap bg-dark" style="margin-top: 50px; height: 150px;">
+        <h3>Made by AgusDev</h3>
+    </footer>
+</body>
+</html>
